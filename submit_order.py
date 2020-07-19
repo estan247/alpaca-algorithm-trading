@@ -3,10 +3,9 @@ import alpaca_trade_api as tradeapi
 import requests
 from bs4 import BeautifulSoup
 
-
-APCA_API_BASE_URL = ''
-APCA_API_KEY_ID = ''
-APCA_API_SECRET_KEY = ''
+APCA_API_BASE_URL = 'https://paper-api.alpaca.markets'
+APCA_API_KEY_ID = ''  # Input your Alpaca API key ID here
+APCA_API_SECRET_KEY = ''  # Input your Alpaca API Secret key here
 
 api = tradeapi.REST(APCA_API_KEY_ID, APCA_API_SECRET_KEY, APCA_API_BASE_URL, api_version='v2')
 
